@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TechnicalNaresh — Hindi and English technology tips, tutorials, and projects.">
+<title>TechnicalNaresh | Tech Made Simple</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--text:#eef3ff;--muted:#aab6d3;--accent:#6ee7f9;--accent2:#a78bfa;--line:#283452}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#1a2450 0,transparent 35%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;background:#0b1020eF;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}.logo{font-weight:850;letter-spacing:-.5px;font-size:1.2rem}.logo span{color:var(--accent)}nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}nav a{font-size:.92rem;color:var(--muted)}nav a:hover{color:var(--accent)}
+.lang{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 12px;border-radius:10px;cursor:pointer}
+.hero{padding:84px 0 65px;display:grid;grid-template-columns:1.4fr .8fr;gap:35px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.04;letter-spacing:-2px;margin:12px 0 22px}.gradient{background:linear-gradient(90deg,var(--accent),var(--accent2));color:transparent;background-clip:text}.lead{color:var(--muted);font-size:1.1rem;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:linear-gradient(100deg,var(--accent),#a5f3fc);color:#08111f;font-weight:800}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+.orbit{min-height:270px;border:1px solid #344365;border-radius:28px;background:linear-gradient(145deg,#182341,#10172a);display:grid;place-items:center;position:relative;overflow:hidden}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #52658d;border-radius:50%;width:230px;height:230px}.orbit:after{width:160px;height:160px;border-color:#6ee7f988}.chip{position:absolute;background:#202d4d;border:1px solid #465780;padding:9px 12px;border-radius:12px;font-weight:700}.chip.one{top:22px;left:18px}.chip.two{right:16px;top:80px}.chip.three{bottom:28px;left:34px}.core{font-size:3.5rem;z-index:1}
+section{padding:48px 0}.section-title{font-size:clamp(1.8rem,4vw,2.5rem);margin:0 0 8px;letter-spacing:-.7px}.sub{color:var(--muted);margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#151f38,#10172a);border:1px solid var(--line);border-radius:18px;padding:22px}.card .icon{font-size:1.7rem}.card h3{margin:12px 0 6px}.card p{margin:0;color:var(--muted)}.tag{display:inline-block;font-size:.75rem;color:var(--accent);border:1px solid #315268;padding:4px 8px;border-radius:99px;margin-top:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:18px}.aboutbox{padding:26px;border-radius:20px;background:#121a30;border:1px solid var(--line)}.aboutbox p{color:var(--muted)}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:linear-gradient(120deg,#152847,#241b45);border:1px solid #3a456d;border-radius:22px;padding:28px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+[lang="en"] .hi{display:none}[lang="hi"] .en{display:none}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:55px 0 35px}.orbit{min-height:220px}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}.nav{align-items:flex-start}.nav nav{gap:10px}nav a{font-size:.82rem}}
+</style>
+</head>
+<body lang="hi">
+<header><div class="wrap nav">
+<a class="logo" href="#home">Technical<span>Naresh</span></a>
+<nav aria-label="Main navigation">
+<a href="#home"><span class="hi">होम</span><span class="en">Home</span></a>
+<a href="#about"><span class="hi">परिचय</span><span class="en">About</span></a>
+<a href="#tips"><span class="hi">टेक टिप्स</span><span class="en">Tech Tips</span></a>
+<a href="#work"><span class="hi">प्रोजेक्ट</span><span class="en">Projects</span></a>
+<a href="#contact"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+</nav>
+<button class="lang" id="langBtn" type="button">English</button>
+</div></header>
+<main>
+<section class="wrap hero" id="home">
+<div>
+<div class="eyebrow">Technology • Tutorials • Learning</div>
+<h1><span class="hi">टेक्नोलॉजी सीखें,<br><span class="gradient">आसान तरीके से।</span></span><span class="en">Explore technology,<br><span class="gradient">the simple way.</span></span></h1>
+<p class="lead"><span class="hi">नमस्ते! TechnicalNaresh पर आपका स्वागत है। यहाँ आपको टेक टिप्स, आसान गाइड और नए डिजिटल कौशल सीखने में मदद मिलेगी।</span><span class="en">Welcome to TechnicalNaresh. Discover practical tech tips, easy guides, and digital skills to help you learn with confidence.</span></p>
+<div class="actions"><a class="btn" href="#tips"><span class="hi">टेक टिप्स देखें →</span><span class="en">Explore tech tips →</span></a><a class="btn secondary" href="#about"><span class="hi">मेरे बारे में</span><span class="en">About me</span></a></div>
+</div>
+<div class="orbit" aria-label="Technology illustration"><span class="chip one">HTML / CSS</span><span class="chip two">💡 How-to guides</span><span class="chip three">Digital Skills</span><div class="core">⚡</div></div>
+</section>
+<section class="wrap" id="about">
+<h2 class="section-title"><span class="hi">मेरे बारे में</span><span class="en">About Me</span></h2>
+<p class="sub"><span class="hi">आपकी टेक्नोलॉजी सीखने की जगह।</span><span class="en">Your space to learn technology.</span></p>
+<div class="about">
+<div class="aboutbox"><h3>👋 <span class="hi">नमस्ते, मैं Naresh हूँ</span><span class="en">Hello, I'm Naresh</span></h3><p><span class="hi">यह आपकी व्यक्तिगत वेबसाइट है। यहाँ अपना परिचय, अनुभव, रुचियाँ और अपनी उपलब्धियाँ जोड़ें।</span><span class="en">This is your personal website. Add your introduction, experience, interests, and achievements here.</span></p></div>
+<div class="aboutbox"><h3>🎯 <span class="hi">मेरा उद्देश्य</span><span class="en">My Mission</span></h3><p><span class="hi">टेक्नोलॉजी को सरल भाषा में समझना और उपयोगी जानकारी सबके साथ साझा करना।</span><span class="en">To make technology easier to understand and share useful knowledge with everyone.</span></p></div>
+</div>
+</section>
+<section class="wrap" id="tips">
+<h2 class="section-title"><span class="hi">टेक टिप्स और गाइड</span><span class="en">Tech Tips & Guides</span></h2>
+<p class="sub"><span class="hi">यहाँ अपने लेख और ट्यूटोरियल जोड़ें।</span><span class="en">Add your articles and tutorials here.</span></p>
+<div class="grid">
+<article class="card"><div class="icon">📱</div><h3><span class="hi">मोबाइल टिप्स</span><span class="en">Mobile Tips</span></h3><p><span class="hi">फोन की उपयोगी सेटिंग्स, ऐप्स और आसान ट्रिक्स।</span><span class="en">Useful phone settings, apps, and simple tricks.</span></p><span class="tag">Mobile</span></article>
+<article class="card"><div class="icon">💻</div><h3><span class="hi">कंप्यूटर गाइड</span><span class="en">Computer Guides</span></h3><p><span class="hi">कंप्यूटर की बुनियादी बातें और काम आसान करने के तरीके।</span><span class="en">Computer basics and ways to work smarter.</span></p><span class="tag">Computer</span></article>
+<article class="card"><div class="icon">🌐</div><h3><span class="hi">इंटरनेट और AI</span><span class="en">Internet & AI</span></h3><p><span class="hi">ऑनलाइन टूल्स, AI और डिजिटल सुरक्षा के बारे में जानें।</span><span class="en">Learn about online tools, AI, and digital safety.</span></p><span class="tag">Digital</span></article>
+</div>
+</section>
+<section class="wrap" id="work">
+<h2 class="section-title"><span class="hi">मेरे प्रोजेक्ट</span><span class="en">My Projects</span></h2>
+<p class="sub"><span class="hi">अपने काम, वीडियो या पोर्टफोलियो के लिंक यहाँ जोड़ें।</span><span class="en">Add links to your work, videos, or portfolio here.</span></p>
+<div class="grid">
+<div class="card"><div class="icon">🛠️</div><h3><span class="hi">प्रोजेक्ट 01</span><span class="en">Project 01</span></h3><p><span class="hi">अपने प्रोजेक्ट का छोटा विवरण यहाँ लिखें।</span><span class="en">Write a short description of your project here.</span></p></div>
+<div class="card"><div class="icon">🎬</div><h3><span class="hi">वीडियो ट्यूटोरियल</span><span class="en">Video Tutorials</span></h3><p><span class="hi">अपने YouTube वीडियो का लिंक यहाँ जोड़ें।</span><span class="en">Add a link to your YouTube video here.</span></p></div>
+<div class="card"><div class="icon">📚</div><h3><span class="hi">सीखने के संसाधन</span><span class="en">Learning Resources</span></h3><p><span class="hi">उपयोगी वेबसाइट और सीखने के लिंक साझा करें।</span><span class="en">Share useful websites and learning links.</span></p></div>
+</div>
+</section>
+<section class="wrap" id="contact">
+<div class="contact"><div><h2 class="section-title"><span class="hi">संपर्क करें</span><span class="en">Get in Touch</span></h2><p class="sub" style="margin:0"><span class="hi">अपना ईमेल या सोशल मीडिया लिंक यहाँ जोड़ें।</span><span class="en">Add your email or social media link here.</span></p></div><a class="btn" href="mailto:hello@example.com"><span class="hi">ईमेल लिखें</span><span class="en">Email Me</span></a></div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> TechnicalNaresh</span><span><span class="hi">सीखते रहें • आगे बढ़ते रहें</span><span class="en">Keep learning • Keep growing</span></span></div></footer>
+<script>
+const btn=document.getElementById('langBtn');
+btn.addEventListener('click',()=>{const next=document.body.lang==='hi'?'en':'hi';document.body.lang=next;btn.textContent=next==='hi'?'English':'हिंदी';});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
